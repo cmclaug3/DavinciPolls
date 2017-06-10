@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+
+	<title>Davinci Polls</title>
+
+</head>
+
+
+<body>
+
+	<h2>Hello world!</h2>
+
+	<br><br>
+
+	{% for poll in polls %}
+		{{ poll.name }}
+		<br>1 - {{ poll.answer_1 }}
+		<br>2 - {{ poll.answer_2 }}
+		<br>3 - {{ poll.answer_3 }}
+		<br>4 - {{ poll.answer_4 }}
+	{% endfor %}
+
+</body>
+
+
+</html>
